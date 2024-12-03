@@ -121,8 +121,9 @@ body {
 
 /* Benefits Section */
 .benefits {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
     padding: 3rem 2rem;
     background: #ffffff;
     border-radius: 10px;
@@ -132,12 +133,20 @@ body {
 }
 .benefit {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 200px;
 }
 .benefit i {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #007bff;
+}
+.benefit img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
 }
 .benefit h3 {
     font-size: 1.2rem;
