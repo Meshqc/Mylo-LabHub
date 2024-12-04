@@ -229,3 +229,31 @@ footer {
     border-top: 1px solid #ddd;
     color: #777;
 }
+/* Blog Card Styling */
+.blog-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.blog-card img {
+    width: 8%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.blog-content {
+    padding: 1rem;
+    background: #f9f9f9;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}

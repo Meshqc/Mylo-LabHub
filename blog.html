@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog & FAQ Mockup</title>
+<title>Insights Hub - Blog</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,8 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="faq.html">FAQ</a></li>
     </ul>
     </nav>
@@ -27,54 +27,60 @@
 </header>
 
 <!-- Blog Page -->
- <!-- Hero Section -->
-<section class="hero blog-hero">
-    <h1>Insights Hub</h1>
-    <p>Explore the latest trends, insights, and practical tips to take your research to the next level.</p>
-</section>
-
 <section class="blog">
     <h1>Welcome to Our Blog</h1>
     <p>Explore articles, tutorials, and insights about research, lab management, and productivity tools.</p>
 
     <div class="blog-grid">
-    <article class="blog-card">
-        <img src="assets/blog-image-1.jpg" alt="Blog Post 1">
+    <article class="blog-card" onclick="toggleContent('blog1')">
+        <img src="assets/efficiency-lab.jpg" alt="Maximizing Efficiency in Your Lab">
         <h3>Maximizing Efficiency in Your Lab</h3>
-        <p>Discover tips and strategies to streamline your lab workflows and boost productivity.</p>
-        <a href="#" class="btn primary">Read More</a>
+        <p>Discover actionable strategies to streamline your lab workflows and boost productivity.</p>
     </article>
+    <div id="blog1" class="blog-content hidden">
+        <p>
+        Labs are complex environments with numerous workflows and processes. This article explores key strategies
+        for enhancing efficiency in your lab, including streamlined workflows, better resource allocation, and adopting new technologies.
+        </p>
+    </div>
 
-    <article class="blog-card">
-        <img src="assets/blog-image-2.jpg" alt="Blog Post 2">
+    <article class="blog-card" onclick="toggleContent('blog2')">
+        <img src="assets/ai-research.jpg" alt="AI in Research Management">
         <h3>AI in Research Management</h3>
         <p>Learn how AI tools can revolutionize experiment tracking and data analysis.</p>
-        <a href="#" class="btn primary">Read More</a>
     </article>
+    <div id="blog2" class="blog-content hidden">
+        <p>
+        AI is transforming research management by automating data analysis, improving experiment tracking, and providing
+        predictive insights to accelerate discoveries. Learn how to integrate AI tools into your lab.
+        </p>
+    </div>
 
-    <article class="blog-card">
-        <img src="assets/blog-image-3.jpg" alt="Blog Post 3">
+    <article class="blog-card" onclick="toggleContent('blog3')">
+        <img src="assets/collaboration-tips.jpg" alt="Best Practices for Collaboration">
         <h3>Best Practices for Collaboration</h3>
         <p>Enhance team collaboration with actionable tips and the latest tools.</p>
-        <a href="#" class="btn primary">Read More</a>
     </article>
+    <div id="blog3" class="blog-content hidden">
+        <p>
+        Collaboration is key to research success. This article provides tips on improving communication, assigning roles effectively,
+        and leveraging digital tools for seamless teamwork.
+        </p>
     </div>
-</section>
-
-<!-- Newsletter Section -->
-<section class="newsletter">
-    <h2>Stay Updated</h2>
-    <p>Subscribe to our newsletter to receive the latest insights and updates directly in your inbox.</p>
-    <form>
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit" class="btn primary">Subscribe</button>
-    </form>
+    </div>
 </section>
 
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 Mylo LabHub. All rights reserved.</p>
 </footer>
+
+<script>
+    function toggleContent(blogId) {
+    const content = document.getElementById(blogId);
+    content.classList.toggle('hidden');
+    }
+</script>
 
 </body>
 </html>
