@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: 'localhost',
-    port: 5173,
+    port: 3000,
     open: true, // Opens browser on start
   },
   resolve: {
