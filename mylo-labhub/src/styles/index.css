@@ -1,0 +1,24 @@
+/* src/styles/index.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+
+.container {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}

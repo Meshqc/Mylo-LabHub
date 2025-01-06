@@ -1,0 +1,25 @@
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #2a2a40;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-container input {
+    width: 90%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 70%;
+    margin-top: 1rem;
+}
