@@ -1,23 +1,13 @@
-/* src/styles/Blog.css */
-.blog-page {
-    padding: 2rem;
+.blog {
     text-align: center;
+    padding: 2rem;
 }
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+.blog-cards {
+    display: flex;
+    gap: 1rem;
 }
-
 .blog-card {
     background: #2a2a40;
+    padding: 1rem;
     border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: scale(1.05);
 }

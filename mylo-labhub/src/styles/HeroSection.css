@@ -1,0 +1,48 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn.primary {
+    padding: 0.75rem 1.5rem;
+    background: #4caf50;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn.secondary {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    color: #4caf50;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}

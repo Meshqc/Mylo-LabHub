@@ -1,20 +1,18 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection';
+import FeatureCard from '../components/FeatureCard';
 import '../styles/Home.css';
 
 function Home() {
 return (
-    <div className="home-page">
-    <header className="hero">
-        <h1>Revolutionizing Science, One Experiment at a Time</h1>
-        <p>Advanced tools for streamlined research management.</p>
-        <button className="btn primary">Get Started</button>
-    </header>
+    <div className="home">
+    <HeroSection />
     <section className="features">
         <h2>Key Features</h2>
         <div className="feature-grid">
-        <div className="feature-card">Digital Lab Notebook</div>
-        <div className="feature-card">AI Research Insights</div>
-        <div className="feature-card">Team Collaboration</div>
+        <FeatureCard icon="🔬" title="Advanced Analytics" description="Detailed insights and analytics for experiments." />
+        <FeatureCard icon="💾" title="Secure Storage" description="Store and manage data safely." />
+        <FeatureCard icon="🤝" title="Team Collaboration" description="Seamless team communication tools." />
         </div>
     </section>
     </div>

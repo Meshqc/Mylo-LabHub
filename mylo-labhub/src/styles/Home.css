@@ -1,51 +1,19 @@
-/* src/styles/Home.css */
-.home-page {
+.home {
     background: #1e1e2f;
-}
-
-.hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn.primary {
-    padding: 0.75rem 1.5rem;
-    background: #4caf50;
-    color: #fff;
-    border-radius: 5px;
 }
 
 .features {
     text-align: center;
-    margin-top: 4rem;
+    padding: 4rem 2rem;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.feature-card {
-    background: #2a2a40;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
 }
